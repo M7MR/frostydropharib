@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Categories - Frosty Drop</title>
+<title>Frosty Drop</title>
 
 <style>
 * {
@@ -77,52 +77,70 @@ nav a.active {
     cursor: pointer;
 }
 
+/* POSTER */
+.poster {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.poster img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 20px;
+}
+
 /* CONTENT */
 .content {
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
 }
 
-.content h1 {
+.content h2 {
     color: #166534;
+    margin-bottom: 10px;
 }
 
-/* CATEGORY CARDS */
-.categories {
+.content p {
+    color: #374151;
+}
+
+/* CARDS */
+.cards {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
-.category {
+.card {
     background: white;
-    width: 260px;
+    padding: 20px;
+    width: 250px;
     border-radius: 15px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.category:hover {
-    transform: translateY(-5px);
-}
-
-.category img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-.category .info {
-    padding: 15px;
     text-align: center;
 }
 
-.category h3 {
+.card h3 {
     color: #16a34a;
-    margin-bottom: 10px;
+}
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video-section h2 {
+    color: #166534;
+    margin-bottom: 15px;
+}
+
+.video-section video {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
@@ -131,7 +149,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 </style>
@@ -146,8 +164,8 @@ footer {
     </div>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="Categories.html" class="active">Categories</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="Categories.html">Categories</a>
         <a href="Products.html">Products</a>
         <a href="Services.html">Services</a>
     </nav>
@@ -157,51 +175,50 @@ footer {
 
 <!-- SEARCH -->
 <div class="search-container">
-    <input type="text" placeholder="Search category...">
+    <input type="text" placeholder="Search drinks...">
     <button>Search</button>
 </div>
 
-<!-- TITLE -->
-<div class="content">
-    <h1>Our Categories</h1>
-    <p>Explore our refreshing drink categories 🍹</p>
+<!-- POSTER -->
+<div class="poster">
+    <img src="images/poster.png" alt="Poster">
 </div>
 
-<!-- CATEGORIES -->
-<div class="categories">
+<!-- CONTENT 1 -->
+<div class="content">
+    <h2>Welcome to Frosty Drop</h2>
+    <p>Fresh juices, smoothies, and iced drinks made just for you 🍹</p>
+</div>
 
-    <div class="category">
-        <img src="images/Juice.jpg">
-        <div class="info">
-            <h3>Fresh Juices</h3>
-            <p>Natural fruit juices full of vitamins.</p>
-        </div>
+<!-- CONTENT 2 (CARDS) -->
+<div class="cards">
+    <div class="card">
+        <h3>Fresh Juices</h3>
+        <p>Natural and healthy drinks made from real fruits.</p>
     </div>
 
-    <div class="category">
-        <img src="images/Smoothie.jpg">
-        <div class="info">
-            <h3>Smoothies</h3>
-            <p>Rich and creamy blended drinks.</p>
-        </div>
+    <div class="card">
+        <h3>Smoothies</h3>
+        <p>Delicious blended drinks with creamy texture.</p>
     </div>
 
-    <div class="category">
-        <img src="images/iced_coffee.jpg">
-        <div class="info">
-            <h3>Iced Coffee</h3>
-            <p>Cold coffee drinks for energy.</p>
-        </div>
+    <div class="card">
+        <h3>Iced Coffee</h3>
+        <p>Cold and refreshing coffee for energy boost.</p>
     </div>
-
-    <div class="category">
-        <img src="images/Special_Drinks.jpg">
-        <div class="info">
-            <h3>Special Drinks</h3>
-            <p>Unique and signature beverages.</p>
-        </div>
-    </div>
-
+</div>
+<!-- VIDEO SECTION -->
+<div class="video-section">
+    <h2>Watch Our Drinks in Action 🎥</h2>
+    <video controls>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<!-- CONTENT 3 -->
+<div class="content">
+    <h2>Why Choose Us?</h2>
+    <p>High quality ingredients, modern service, and amazing taste experience.</p>
 </div>
 
 <!-- FOOTER -->
