@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frosty Drop</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0fdf4;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background: #16a34a;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* NAV */
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #22c55e;
+}
+
+nav a.active {
+    background: white;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* SEARCH */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+/* POSTER */
+.poster {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.poster img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 20px;
+}
+
+/* CONTENT */
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.content h2 {
+    color: #166534;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #374151;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #16a34a;
+}
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video-section h2 {
+    color: #166534;
+    margin-bottom: 15px;
+}
+
+.video-section video {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    background: #166534;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <nav>
+        <a href="Home.html" class="active">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Products.html">Products</a>
+        <a href="Services.html">Services</a>
+    </nav>
+
+    <div></div>
+</header>
+
+<!-- SEARCH -->
+<div class="search-container">
+    <input type="text" placeholder="Search drinks...">
+    <button>Search</button>
+</div>
+
+<!-- POSTER -->
+<div class="poster">
+    <img src="images/poster.png" alt="Poster">
+</div>
+
+<!-- CONTENT 1 -->
+<div class="content">
+    <h2>Welcome to Frosty Drop</h2>
+    <p>Fresh juices, smoothies, and iced drinks made just for you 🍹</p>
+</div>
+
+<!-- CONTENT 2 (CARDS) -->
+<div class="cards">
+    <div class="card">
+        <h3>Fresh Juices</h3>
+        <p>Natural and healthy drinks made from real fruits.</p>
+    </div>
+
+    <div class="card">
+        <h3>Smoothies</h3>
+        <p>Delicious blended drinks with creamy texture.</p>
+    </div>
+
+    <div class="card">
+        <h3>Iced Coffee</h3>
+        <p>Cold and refreshing coffee for energy boost.</p>
+    </div>
+</div>
+<!-- VIDEO SECTION -->
+<div class="video-section">
+    <h2>Watch Our Drinks in Action 🎥</h2>
+    <video controls>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<!-- CONTENT 3 -->
+<div class="content">
+    <h2>Why Choose Us?</h2>
+    <p>High quality ingredients, modern service, and amazing taste experience.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Frosty Drop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

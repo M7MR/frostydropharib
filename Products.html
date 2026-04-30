@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - Frosty Drop</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f0fdf4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background: #16a34a;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+nav a.active {
+    background: white;
+    color: #16a34a;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    flex: 1; /* هذا المهم */
+}
+
+/* PRODUCT CARD */
+.product {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* IMAGE */
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* INFO */
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.info h3 {
+    color: #16a34a;
+}
+
+/* DETAILS */
+.details {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* PRICE */
+.price {
+    color: #16a34a;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #166534;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Products.html" class="active">Products</a>
+        <a href="Services.html">Services</a>
+    </nav>
+
+    <div></div>
+</header>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+    <div class="product">
+        <img src="images/Orange_Juice.jpg">
+        <div class="info">
+            <h3>Orange Juice</h3>
+            <p class="details">Fresh oranges - Medium size</p>
+            <div class="price">1.500 OMR</div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="images/Mango_Juice.jpg">
+        <div class="info">
+            <h3>Mango Juice</h3>
+            <p class="details">Sweet mango drink - Large</p>
+            <div class="price">1.800 OMR</div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="images/Strawberry_Smoothie.jpg">
+        <div class="info">
+            <h3>Strawberry Smoothie</h3>
+            <p class="details">Creamy & fresh - Medium</p>
+            <div class="price">2.000 OMR</div>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="images/Banana_Smoothie.jpg">
+        <div class="info">
+            <h3>Banana Smoothie</h3>
+            <p class="details">Energy drink with milk</p>
+            <div class="price">1.700 OMR</div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Frosty Drop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
