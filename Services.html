@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services - Frosty Drop</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f0fdf4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background: #16a34a;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a.active {
+    background: white;
+    color: #16a34a;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px;
+    flex: 1;
+}
+
+.service {
+    background: white;
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.service img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.service .info {
+    padding: 15px;
+}
+
+.service h3 {
+    color: #16a34a;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #166534;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Products.html">Products</a>
+        <a href="Services.html" class="active">Services</a>
+    </nav>
+
+    <div></div>
+</header>
+
+<div class="services">
+
+    <div class="service">
+        <img src="images/delivery.jpg">
+        <div class="info">
+            <h3>Delivery Service</h3>
+            <p>Fast and reliable delivery to your location.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/custom_drink.jpg">
+        <div class="info">
+            <h3>Custom Drinks</h3>
+            <p>Create your own drink with your favorite ingredients.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images/catering.jpg">
+        <div class="info">
+            <h3>Event Catering</h3>
+            <p>We provide drinks for parties and special events.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Frosty Drop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

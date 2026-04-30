@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories - Frosty Drop</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0fdf4;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background: #16a34a;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* NAV */
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #22c55e;
+}
+
+nav a.active {
+    background: white;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* SEARCH */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    text-align: center;
+    padding: 30px;
+}
+
+.content h1 {
+    color: #166534;
+}
+
+/* CATEGORY CARDS */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.category {
+    background: white;
+    width: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+.category img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.category .info {
+    padding: 15px;
+    text-align: center;
+}
+
+.category h3 {
+    color: #16a34a;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #166534;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Categories.html" class="active">Categories</a>
+        <a href="Products.html">Products</a>
+        <a href="Services.html">Services</a>
+    </nav>
+
+    <div></div>
+</header>
+
+<!-- SEARCH -->
+<div class="search-container">
+    <input type="text" placeholder="Search category...">
+    <button>Search</button>
+</div>
+
+<!-- TITLE -->
+<div class="content">
+    <h1>Our Categories</h1>
+    <p>Explore our refreshing drink categories 🍹</p>
+</div>
+
+<!-- CATEGORIES -->
+<div class="categories">
+
+    <div class="category">
+        <img src="images/Juice.jpg">
+        <div class="info">
+            <h3>Fresh Juices</h3>
+            <p>Natural fruit juices full of vitamins.</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/Smoothie.jpg">
+        <div class="info">
+            <h3>Smoothies</h3>
+            <p>Rich and creamy blended drinks.</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/iced_coffee.jpg">
+        <div class="info">
+            <h3>Iced Coffee</h3>
+            <p>Cold coffee drinks for energy.</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/Special_Drinks.jpg">
+        <div class="info">
+            <h3>Special Drinks</h3>
+            <p>Unique and signature beverages.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Frosty Drop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
